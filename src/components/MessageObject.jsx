@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 // import Nav from './nav.jsx';
 // import { Router } from '@reach/router';
+import { sayHello } from '../utils/index.js'
 
 class MessageObject extends Component {
     state = {
@@ -26,6 +27,7 @@ class MessageObject extends Component {
         this.setState({
             msg: ''
         });
+        sayHello();
     };
 
     handleChange = (e) => {
